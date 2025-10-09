@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    static const greeting = 'Hello from Eu';
+    const greeting = 'Hello from Eu';
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -114,7 +114,11 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {
+        ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Hello from Team Sakura!')),
+        );
+        },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
