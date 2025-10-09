@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    const greeting = 'Hello from Cipta';
+    const greeting = 'Hello from Budi & Sari (resolved conflict)';
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
